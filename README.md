@@ -1,1 +1,1 @@
-# next-fullstack-template
+# next-docker-template
