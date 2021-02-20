@@ -770,13 +770,6 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
   integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
 
-"@prisma/cli@^2.17.0":
-  version "2.17.0"
-  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.17.0.tgz#27a963afc5c846ce77c75c5436c82919bf21b72d"
-  integrity sha512-G2Hu15E+dLX/VSj8NJzDPXJzl/ji331w+T97EW5NDIDDoGakSVW7r3xcw9dR4uRnoGtttZ7JhBFjXg6bt1Mb0g==
-  dependencies:
-    "@prisma/engines" "2.17.0-35.3c463ebd78b1d21d8fdacdd27899e280cf686223"
-
 "@prisma/client@^2.17.0":
   version "2.17.0"
   resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.17.0.tgz#e38462796c2e824504763416f5e3a7219d70652d"
@@ -2697,6 +2690,13 @@ pretty-format@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-3.8.0.tgz#bfbed56d5e9a776645f4b1ff7aa1a3ac4fa3c385"
   integrity sha1-v77VbV6ad2ZF9LH/eqGjrE+jw4U=
+
+prisma@^2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-2.17.0.tgz#686469914ed13d4b0926ee5f17efb7a9ab741e8a"
+  integrity sha512-NypJI7OCXCfDkRKubbVb3nmPeRJ1SjQfg6QAwK06KsreBZl1F96rFz2iB2bl4kIrhLAbIySBjwUJlG87Jsxt7g==
+  dependencies:
+    "@prisma/engines" "2.17.0-35.3c463ebd78b1d21d8fdacdd27899e280cf686223"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"

@@ -4,9 +4,6 @@ import Providers from "next-auth/providers";
 import Adapters from "next-auth/adapters";
 import { PrismaClient } from "@prisma/client";
 
-// https://yuyao.me/posts/next-prisma-auth-tutorial
-let prisma;
-
 declare global {
   namespace NodeJS {
     interface Global {
@@ -15,6 +12,8 @@ declare global {
   }
 }
 
+// https://yuyao.me/posts/next-prisma-auth-tutorial
+let prisma;
 if (process.env.NODE_ENV === "production") {
   prisma = new PrismaClient();
 } else {
