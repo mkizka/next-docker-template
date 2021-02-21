@@ -7,7 +7,7 @@ volumes:
 
 services:
   app:
-    image: mkizka/next-fullstack-template
+    image: mkizka/next-docker-template
     build: ./app
     command: bash -c "yarn -- && yarn dev"
     ports:
