@@ -1,8 +1,10 @@
 #!/bin/sh
 
-HTTP_PORT=3000
+yarn prisma migrate deploy --preview-feature
 if [ -n "$PORT" ]; then
-  HTTP_PORT=$PORT
+  yarn start -p $PORT
+else
+  # devDependenciesのインストール
+  yarn install
+  yarn dev
 fi
-
-yarn start -p $HTTP_PORT

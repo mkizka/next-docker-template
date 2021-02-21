@@ -9,7 +9,6 @@ services:
   app:
     image: mkizka/next-docker-template
     build: ./app
-    command: bash -c "yarn -- && yarn dev"
     ports:
       - 3000:3000
       - 5555:5555
@@ -20,6 +19,8 @@ services:
     environment:
       - NEXTAUTH_URL=http://localhost:3000
       - DATABASE_URL=postgresql://postgres:password@db:5432/postgres?schema=public
+    depends_on:
+      - db
   db:
     image: "postgres:13-alpine"
     volumes:
