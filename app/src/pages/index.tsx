@@ -3,7 +3,7 @@ import { Button } from "@chakra-ui/react";
 
 export default function Home() {
   const [session, loading] = useSession();
-  
+
   return (
     <>
       {loading ? (
@@ -15,7 +15,7 @@ export default function Home() {
         </>
       ) : (
         <>
-          サインイン完了。 email: {session.user.email} <br />
+          サインイン完了。 email: {session.user?.email} <br />
           <Button onClick={() => signOut()}>Sign out</Button>
         </>
       )}
