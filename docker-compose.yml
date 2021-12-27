@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 volumes:
   node_modules:
@@ -22,7 +22,7 @@ services:
     depends_on:
       - db
   db:
-    image: postgres:13-alpine
+    image: postgres:14-alpine
     volumes:
       - db_data:/var/lib/postgresql/data
     environment:
