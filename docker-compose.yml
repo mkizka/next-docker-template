@@ -19,6 +19,7 @@ services:
     environment:
       - NEXTAUTH_URL=http://localhost:3000
       - DATABASE_URL=postgresql://postgres:password@db:5432/postgres?schema=public
+      - SECRET=secret
     depends_on:
       - db
   db:
